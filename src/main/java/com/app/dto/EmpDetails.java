@@ -6,6 +6,7 @@ public class EmpDetails {
 	private String designation;
 	private String email;
 	private String location;
+	private String address;
 	
 	public String getEmpName() {
 		return empName;
@@ -30,6 +31,12 @@ public class EmpDetails {
 	}
 	public void setLocation(String location) {
 		this.location = location;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 }

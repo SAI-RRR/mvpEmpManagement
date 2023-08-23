@@ -1,13 +1,9 @@
 package com.app.service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.app.dto.EmpDetails;
 import com.app.entity.EmpDetailsEntity;
 import com.app.repository.EmpDetailsRepository;
@@ -29,6 +25,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 		empEntity.setEmail(empDTO.getEmail());
 		empEntity.setDesignation(empDTO.getDesignation());
 		empEntity.setLocation(empDTO.getLocation());
+		empEntity.setAddress(empDTO.getAddress());
 		return empDetailsRepository.save(empEntity);
 	}
 
@@ -54,8 +51,6 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public  String deleteEmployee(long id) {
 		EmpDetailsEntity empdetails = empDetailsRepository.findById(id).orElse(null);
 		empDetailsRepository.delete(empdetails);
-		Map<String, Boolean> response = new HashMap<>();
-		response.put("delete", Boolean.TRUE);
 		return "Deleted success";
 	}
 
