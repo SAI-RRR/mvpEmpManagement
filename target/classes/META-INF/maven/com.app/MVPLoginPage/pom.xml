@@ -11,7 +11,7 @@
 	<groupId>com.app</groupId>
 	<artifactId>MVPLoginPage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MVPLoginPage</name>
+	<name>mvpEmpManagement</name>
 	<description>CRUD App</description>
 	<properties>
 		<java.version>11</java.version>
