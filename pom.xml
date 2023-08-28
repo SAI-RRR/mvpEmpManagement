@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.app</groupId>
-	<artifactId>MVPLoginPage</artifactId>
+	<artifactId>mvpEmpManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MVPLoginPage</name>
 	<description>CRUD App</description>
