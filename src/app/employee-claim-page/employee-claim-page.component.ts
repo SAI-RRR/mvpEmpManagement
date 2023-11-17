@@ -10,6 +10,7 @@ import{FormBuilder, FormGroup} from '@angular/forms';
 })
 export class EmployeeClaimPageComponent implements OnInit {
 [x: string]: any;
+imgURL:any;
  
   claims:Claims = new Claims();
 claimsform!: FormGroup<any>;
@@ -22,6 +23,17 @@ public selectedFile:any;
 
   ngOnInit() : void{
   }
+  public onFileChanged(event:any){
+    this.selectedFile=event.target.files[0];
+
+let reader=new FileReader();
+reader.readAsDataURL(event.target.files[0])
+reader.onload=(event2)=>{
+  this.imgURL=reader.result;
+};
+
+  }
+
   saveClaim(){
     const uploadData = new FormData();
     uploadData.append('pic',this.selectedFile,this.selectedFile.name);

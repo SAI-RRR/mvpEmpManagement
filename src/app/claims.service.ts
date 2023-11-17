@@ -11,6 +11,6 @@ export class ClaimsService {
   constructor(private httpclient : HttpClient){}
 
   createClaim(claim:Claims ): Observable<object>{
-    return this.httpclient.post(`${this.baseURL}`,claim);
+    return this.httpclient.post(`${this.baseURL}`,claim.name,claim.amount);
   }
 }
