@@ -21,6 +21,8 @@ import { EmployeListComponent } from './employe-list/employe-list.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LeaveRequestFormComponent } from './leave-request-form/leave-request-form.component';
+import { LeavedtlsComponent } from './leavedtls/leavedtls.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     TimesheetComponent,
     AddEmployeeComponent,
     EmployeListComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    LeaveRequestFormComponent,
+    LeavedtlsComponent
   ],
   imports: [
     BrowserModule,
